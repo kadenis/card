@@ -39,10 +39,7 @@ u{
     inset 0 -0.2em #000;
   display: inline;
 }
-.vertical_center {
-    height: 100vh;
-    background-color: transparent;
-}
+
 h1{
 	font-weight: 300;
 	font-size: 324%;
@@ -78,12 +75,30 @@ hr{
 }
 /*On mobile*/
 @media (max-width: 767px) {
+	.row:first-child{
+		margin-top: 0.75rem;
+	}
 	.col-md-4{
 		padding-bottom: 2rem;
 	}
+	h1{
+		font-size: 200%;
+
+	}
 }
 
+/*Centering everything vertically*/
+* { margin: 0; padding: 0; }
+#page{display:table;overflow:hidden;margin:0px auto;}
+*:first-child+html #page {position:relative;}/*ie7*/
+* html #page{position:relative;}/*ie6*/
 
+#content_container{display:table-cell;vertical-align: middle;}
+*:first-child+html #content_container{position:absolute;top:50%;}/*ie7*/
+* html #content_container{position:absolute;top:50%;}/*ie6*/
 
+*:first-child+html #content{position:relative;top:-50%;}/*ie7*/
+* html #content{position:relative;top:-50%;}/*ie6*/
 
-
+html,body{height:100%;}
+#page{height:100%;}
