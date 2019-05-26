@@ -1,3 +1,70 @@
-.jumbotron {
+body,html{
+	background: #e8e5e0;
+	color:rgba(0,0,0,0.8);;
+	font-family: 'Yantramanav';
+	font-size: 1.1rem;
+	line-height: 1.4rem;
+	font-weight: 300;
+	cursor: crosshair;
+}
+html{
+}
+a,a:hover{
+	color: rgba(0,0,0,1);
+}
+a:hover{
+	opacity: 0.5;
+	transition: 0.25s all linear;
+	text-decoration: none;
+}
+u{
+  text-decoration: none;
+  text-shadow:
+    -2px -2px #e8e5e0,
+    -2px 2px #e8e5e0,
+    2px -2px #e8e5e0,
+    2px 2px #e8e5e0;
+
+  background-size: 1px 1em;
+  box-shadow:
+    inset 0 -0.175em #e8e5e0,
+    inset 0 -0.2em #000;
+  display: inline;
+}
+.vertical_center {
     height: 100vh;
+    background-color: transparent;
+}
+h1{
+	font-weight: 300;
+	font-size: 324%;
+	line-height: 100%;
+	letter-spacing: 0rem;
+}
+h2{
+	font-weight: 400;
+	font-size: 100%;
+	line-height: 100%;
+	letter-spacing: 0rem;
+}
+
+line{
+	display: block;
+}
+label{
+	position: absolute;
+	font-weight: 100;
+	font-size: 65%;
+	font-weight: 400;
+}
+content{
+	display: block;
+	margin-left: 1rem;
+}
+hr{
+	margin-top: 2rem;
+}
+.row div:last-child content{
+	display: block;
+	margin-left: 1.4rem;
 }
