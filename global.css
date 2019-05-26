@@ -76,7 +76,7 @@ hr{
 /*On mobile*/
 @media (max-width: 767px) {
 	.row:first-child{
-		margin-top: 0.75rem;
+		margin-top: 0.8rem;
 	}
 	.col-md-4{
 		padding-bottom: 2rem;
