@@ -1,5 +1,5 @@
 body,html{
-	background: #f4ede9;
+	background: #f3eeea;
 	color:rgba(0,0,0,0.8);;
 	font-family: 'Yantramanav';
 	font-size: 1.1rem;
@@ -16,6 +16,14 @@ a:hover{
 	opacity: 0.5;
 	transition: 0.25s all linear;
 	text-decoration: none;
+}
+::selection{
+  background: #000!important;
+  color: white!important;
+}
+::-moz-selection {
+  background: #000!important;
+  color: white!important;
 }
 u{
   text-decoration: none;
