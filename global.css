@@ -68,6 +68,8 @@ content{
 }
 hr{
 	margin-top: 2rem;
+	border-color: #e7e5e3!important;
+	opacity: 0.75;
 }
 .row div:last-child content{
 	display: block;
