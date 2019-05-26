@@ -68,3 +68,14 @@ hr{
 	display: block;
 	margin-left: 1.4rem;
 }
+/*On mobile*/
+@media (max-width: 767px) {
+	.col-md-4{
+		padding-bottom: 2rem;
+	}
+}
+
+
+
+
+
