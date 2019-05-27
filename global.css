@@ -2,13 +2,11 @@ body,html{
 	background: #fcfaf9;
 	color:rgba(0,0,0,0.8);;
 	font-family: 'Yantramanav';
-	font-size: 1.1rem;
-	line-height: 1.4rem;
-	font-weight: 300;
 	cursor: crosshair;
+	font-weight: 300;
 }
-html{
-}
+
+
 a,a:hover{
 	color: rgba(0,0,0,1);
 }
@@ -43,7 +41,7 @@ u{
 h1{
 	font-weight: 300;
 	font-size: 324%;
-	line-height: 100%;
+	line-height: 110%;
 	letter-spacing: 0rem;
 }
 h2{
@@ -62,32 +60,80 @@ label{
 	font-size: 65%;
 	font-weight: 400;
 }
-content{
-	display: block;
-	margin-left: 1rem;
+
+
+body{
+	font-size: 1.4vw;
+	line-height: 1.6vw;
+}
+.container-fluid{
+	padding: 10vw;
 }
 hr{
-	margin-top: 2rem;
 	border-color: #e7e5e3!important;
 	opacity: 0.75;
+	margin-top: 3vw;
+}
+content{
+	display: block;
+	margin-left: 1vw;
 }
 .row div:last-child content{
 	display: block;
-	margin-left: 1.4rem;
+	margin-left: 1.7vw;
 }
-/*On mobile*/
-@media (max-width: 767px) {
-	.row:first-child{
-		margin-top: 0.8rem;
+
+
+@media (max-width: 1100px) {
+	body{
+		font-size: 2vh;
+		line-height: 2.2vh;
 	}
-	.col-md-4{
-		padding-bottom: 2rem;
+	.container-fluid{
+		padding: 5vw;
+	}
+	hr{
+		margin-top: 3vh;
+	}
+	content{
+		margin-left: 2vh;
+	}
+	.row div:last-child content{
+		margin-left: 2.4vh;
+	}
+}
+
+/*On mobile*/
+
+@media (max-width: 767px) {
+	body{
+		font-size: 1.3rem;
+		line-height: 1.5rem;
 	}
 	h1{
-		font-size: 200%;
+		font-size: 224%;
 
 	}
+	.container-fluid{
+		padding: 1rem;
+	}
+	content{
+		margin-left: 1rem;
+	}
+	hr{
+		margin-top: 3rem;
+	}
+	.row div:nth-child(2),.row div:nth-child(3){
+		margin-top: 2rem;	
+	}
+	.row div:last-child content{
+		margin-left: 1.4rem;
+	}	
 }
+
+
+
+
 
 /*Centering everything vertically*/
 * { margin: 0; padding: 0; }
