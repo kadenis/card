@@ -42,7 +42,12 @@ h2{
 	line-height: 100%;
 	letter-spacing: 0rem;
 }
-
+.truncate content {
+  width: 100%;
+  white-space: nowrap!important;
+  overflow: hidden!important;
+  text-overflow: ellipsis!important;
+}
 line{
 	display: block;
 }
