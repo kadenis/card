@@ -46,6 +46,13 @@ h2{
 line{
 	display: block;
 }
+.select_works line label i:last-child,
+.select_works line:hover > label i:first-child{
+	display: none;
+}
+.select_works line:hover > label i:last-child{
+	display: inline;
+}
 label{
 	position: absolute;
 	font-weight: 100;
