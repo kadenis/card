@@ -1,10 +1,10 @@
 body,html{
 	background: #fcfaf9;
-	color:rgba(0,0,0,0.8);
+	color:rgba(0,0,0,0.9);
 	/*font-family: 'Yantramanav';*/
-	font-family: 'Yantramanav';
+  	font-family: Sans-Serif;
 	cursor: crosshair;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 
@@ -29,16 +29,24 @@ u{
 	text-decoration: none;
 	border-bottom: 1px solid rgba(0,0,0,0.75);
 	display: inline-block;
-	line-height: 80%;
+	line-height: 95%;
 }
 h1{
 	font-weight: 300;
-	font-size: 350%;
+	font-size: 400%;
 	line-height: 110%;
-	letter-spacing: 0rem;
+	letter-spacing: -0.1rem;
+	font-family: 'Roboto', sans-serif;
+}
+h1 u{
+	text-decoration: none;
+	border-bottom: 0.2vw solid rgba(0,0,0,0.75);
+	display: inline-block;
+	line-height: 100%;
+
 }
 h2{
-	font-weight: 400;
+	font-weight: 200;
 	font-size: 100%;
 	line-height: 100%;
 	letter-spacing: 0rem;
@@ -74,36 +82,39 @@ label{
 
 
 body{
-	font-size: 1.4vw;
-	line-height: 1.6vw;
+	font-size: 1.3vw;
+	line-height: 1.85vw;
 }
 .container-fluid{
-	padding: 10vw;
+	padding: 2vw 10rem 2vw 2vw;
+  	min-height: calc(100vh - 70px);
+}
+
+footer{
+  	padding: 2vw;
 }
 hr{
 	border-color: rgba(0,0,0,0);
 	opacity: 0.75;
-	margin-top: 3vw;
+	margin-top: 2.5vw;
 }
 content{
 	display: block;
 	margin-left: 1.7vw;
 }
-.past{
-	padding: 0 1rem;
-}
 
 
-@media (max-width: 1100px) {
+
+@media (max-width: 1200px) {
 	.hide_br{
 		display: none;
 	}
 	body{
-		font-size: 2vh;
-		line-height: 2.2vh;
+		font-size: 2.15vh;
+		line-height: 3vh;
 	}
 	.container-fluid{
-		padding: 5vw;
+		padding: 2rem;
 	}
 	hr{
 		margin-top: 3vh;
@@ -125,7 +136,8 @@ content{
 	}
 	h1{
 		font-size: 180%;
-
+		letter-spacing: 0rem;
+		font-family: Sans-Serif;
 	}
 	.container-fluid{
 		padding: 1rem;
@@ -142,25 +154,10 @@ content{
 	.past{
 		padding: 0 1rem;
 	}
-
+footer{
+  	padding: 0 1rem 1rem 1rem;
+}
 }
 
 
 
-
-
-/*Centering everything vertically*/
-* { margin: 0; padding: 0; }
-#page{display:table;overflow:hidden;margin:0px auto;}
-*:first-child+html #page {position:relative;}/*ie7*/
-* html #page{position:relative;}/*ie6*/
-
-#content_container{display:table-cell;vertical-align: middle;}
-*:first-child+html #content_container{position:absolute;top:50%;}/*ie7*/
-* html #content_container{position:absolute;top:50%;}/*ie6*/
-
-*:first-child+html #content{position:relative;top:-50%;}/*ie7*/
-* html #content{position:relative;top:-50%;}/*ie6*/
-
-html,body{height:100%;}
-#page{height:100%;}
