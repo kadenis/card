@@ -43,7 +43,6 @@ h1 u{
 	border-bottom: 0.2vw solid rgba(0,0,0,0.75);
 	display: inline-block;
 	line-height: 100%;
-
 }
 h2{
 	font-weight: 200;
@@ -138,6 +137,9 @@ content{
 		font-size: 180%;
 		letter-spacing: 0rem;
 		font-family: Sans-Serif;
+	}
+	h1 u{
+		border-bottom: 2px solid rgba(0,0,0,0.75);
 	}
 	.container-fluid{
 		padding: 1rem;
