@@ -58,6 +58,9 @@ line{
 .select_works line:hover > label i:last-child{
 	display: inline;
 }
+
+
+
 label{
 	position: absolute;
 	font-weight: 100;
@@ -83,7 +86,9 @@ content{
 	display: block;
 	margin-left: 1.7vw;
 }
-
+.past{
+	padding: 0 1rem;
+}
 
 
 @media (max-width: 1100px) {
@@ -102,6 +107,9 @@ content{
 	}
 	content{
 		margin-left: 2.4vh;
+	}
+	.past{
+		padding: 0 1rem 0 2rem;
 	}
 }
 
@@ -128,6 +136,10 @@ content{
 	.row div:nth-child(2),.row div:nth-child(3){
 		margin-top: 2rem;	
 	}	
+	.past{
+		padding: 0 1rem;
+	}
+
 }
 
 
