@@ -1,0 +1,30 @@
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script type="text/javascript" src="libs/sketch.js"></script>
+
+
+<script type="text/javascript" src="libs/glassyWorms.js"></script>
+
+<script type="text/javascript">
+$(function(){
+$('body').glassyWorms({
+colors: ['#000000', '#ff0000'], 
+useStyles: true
+});
+});
+</script>
+
+<script type="text/javascript">
+$(function(){
+$('body').glassyWorms({
+numParticles: 250,
+tailLength: 12,
+maxForce: 8,
+friction: 0.75,
+gravity: 9.81,
+interval: 3,
+colors: ['#fff'],
+element: $('<canvas class="worms"></canvas>')[0],
+useStyles: false
+});
+});
+</script>
