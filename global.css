@@ -10,6 +10,7 @@ body,html{
 .worms{
 	position: absolute;
 	top: 0;
+	pointer-events: none!important;
 
 }
 a,a:hover{
@@ -21,11 +22,11 @@ a:hover{
 	text-decoration: none;
 }
 ::selection{
-  background: #000!important;
+  background: #0000ff!important;
   color: white!important;
 }
 ::-moz-selection {
-  background: #000!important;
+  background: #0000ff!important;
   color: white!important;
 }
 
