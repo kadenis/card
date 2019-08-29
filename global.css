@@ -44,7 +44,7 @@ u{
 h1{
 	font-weight: 300;
 	font-size: 410%;
-	line-height: 110%;
+	line-height: 115%;
 	letter-spacing: -0.1rem;
 	font-family: 'Roboto', sans-serif;
 }
@@ -92,7 +92,7 @@ label{
 
 body{
 	font-size: 1.22vw;
-	line-height: 1.75vw;
+	line-height: 1.8vw;
 }
 .container-fluid{
 	padding: 2vw 10rem 2vw 2vw;
