@@ -8,7 +8,7 @@ body,html{
   font-size: 19px;
   line-height: 140%;
 }
-sup { vertical-align: top; font-size: 0.75em; }
+sup { vertical-align: top; font-size: 0.6em; }
 
 @media (max-width: 767px) {
   body{
