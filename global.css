@@ -48,9 +48,10 @@ h2{
   padding: 0;
   margin: 0;
   font-weight: 400;
-  opacity: 0.5;
 }
-
+thumbnail{
+  font-size: 200%
+}
 label{
   display: inline-block;
   font-size: 62%;
