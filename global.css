@@ -20,11 +20,11 @@ a:hover{
   transition: 0.2s all linear;
 }
 ::selection{
-  background: #000000!important;
+  background: #0000ff!important;
   color: white!important;
 }
 ::-moz-selection {
-  background: #000000!important;
+  background: #0000ff!important;
   color: white!important;
 }
 h2{
