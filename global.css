@@ -15,8 +15,6 @@ body,html{
 .page_left{
   position: absolute;
   left: 0;
-  border-right: 1px solid #0000ff;
-  height: 100vh;
   width: 38%;
 
 }
@@ -24,6 +22,8 @@ body,html{
   position: absolute;
   right: 0;
   width: 62%;
+  border-left: 1px solid #0000ff;
+  min-height: 100%;
 }
 .page_left div, .page_right div{
   padding: 2rem;
