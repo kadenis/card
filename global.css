@@ -30,7 +30,9 @@ body,html{
   padding: 2rem;
 }
 
-
+.page_right div{
+    max-width: 900px;
+}
 
 /*Responsive*/
 @media (max-width: 900px) {
