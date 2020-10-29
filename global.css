@@ -14,6 +14,18 @@ body,html{
 
 /*Pages*/
 .page_left{
+  float: left;
+  width: 38%;
+
+}
+.page_right{
+  float: left;
+  width: 62%;
+  border-left: 0px solid #0000ff;
+  min-height: 100%;
+}
+/*
+.page_left{
   position: absolute;
   left: 0;
   width: 38%;
@@ -23,14 +35,18 @@ body,html{
   position: absolute;
   right: 0;
   width: 62%;
-  border-left: 1px solid #0000ff;
+  border-left: 0px solid #0000ff;
   min-height: 100%;
 }
+*/
 .page_left div, .page_right div{
   padding: 2rem;
 }
 
-.page_right div{
+.page_left{
+    max-width: 555px;
+}
+.page_right{
     max-width: 900px;
 }
 
