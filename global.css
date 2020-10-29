@@ -11,6 +11,7 @@ body,html{
   min-height: 100%;
 }
 
+
 /*Pages*/
 .page_left{
   position: absolute;
@@ -50,11 +51,16 @@ body,html{
 /*Elements*/
 a{
   text-decoration: none; 
-  color: blue!important;
 }
 a:hover{
   text-decoration: underline;
   transition: 0.2s all linear;
+}
+.no_underline:hover{
+  text-decoration: none;
+}
+a:hover > span{
+  text-decoration: underline;
 }
 sup { vertical-align: top; font-size: 0.6em; }
 ::selection{
