@@ -33,7 +33,9 @@ body,html{
 .page_right{
     max-width: 900px;
 }
-
+.hide_smallscreen{
+  display: none;
+}
 /*Responsive*/
 @media (max-width: 900px) {
   body{
@@ -49,7 +51,7 @@ body,html{
     padding: 0rem;
   }
   .hide_smallscreen{
-    display: none;
+    display: block;
   }
 }
 @media (max-width: 500px) {
