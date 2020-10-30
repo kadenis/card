@@ -24,25 +24,9 @@ body,html{
   border-left: 0px solid #0000ff;
   min-height: 100%;
 }
-/*
-.page_left{
-  position: absolute;
-  left: 0;
-  width: 38%;
-
-}
-.page_right{
-  position: absolute;
-  right: 0;
-  width: 62%;
-  border-left: 0px solid #0000ff;
-  min-height: 100%;
-}
-*/
 .page_left div, .page_right div{
   padding: 2rem;
 }
-
 .page_left{
     max-width: 555px;
 }
@@ -63,6 +47,9 @@ body,html{
   }
   .page_left div,.page_right div{
     padding: 0rem;
+  }
+  .hide_smallscreen{
+    display: none;
   }
 }
 @media (max-width: 500px) {
