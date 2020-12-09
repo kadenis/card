@@ -172,7 +172,11 @@
         ['https://payload.cargocollective.com/1/20/647904/10586396/03_5_1600_c.jpg',
         ''],
 
-        ['https://payload.cargocollective.com/1/20/647904/10586396/17.gif',
+        ['https://payload.cargocollective.com/1/20/647904/10586396/01_22_1600_c.jpg',
+        ''],
+
+
+        ['https://payload.cargocollective.com/1/20/647904/10586396/06_8_1600_c.jpg',
         ''],
 
         ['https://payload.cargocollective.com/1/20/647904/10586396/IMG_3344c_1600_c.jpg',
@@ -209,6 +213,7 @@
       setTimeout(autoChange, 3000);  
     }
     function autoChange_click() {
+      clearTimeout(autoChange);
       if(index < imgArray.length){
         img.src = imgArray[index][0];  
         //desc.innerHTML = imgArray[index][1]; 
@@ -217,7 +222,6 @@
       } else {
         index = 0;  
       }
-      clearTimeout(autoChange);
     }
 
     autoChange();
