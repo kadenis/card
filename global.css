@@ -2,12 +2,12 @@
 body,html{
   padding: 0;
   margin: 0;
-  background: #ffffff;
+  background: #dadada;
   color:rgba(0,0,0,0.9);
-  font-family: 'Yantramanav', sans-serif;
-  font-weight: 400;
-  font-size: 19px;
-  line-height: 140%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'!important;  
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
   min-height: 100%;
 }
 
@@ -15,12 +15,11 @@ body,html{
 /*Pages*/
 .page_left{
   float: left;
-  width: 38%;
-
+  width: 50%;
 }
 .page_right{
   float: left;
-  width: 62%;
+  width: 50%;
   border-left: 0px solid #0000ff;
   min-height: 100%;
 }
@@ -36,7 +35,17 @@ body,html{
 .hide_smallscreen{
   display: none;
 }
-/*Responsive*/
+.img_hldr img{
+  width: 100%;
+  filter: grayscale(100%);
+  border-radius: 4px;
+  opacity: 0.9;
+}
+.img_hldr, #desc {
+  padding: 0!important;
+  overflow: hidden;
+}
+/*Mobile*/
 @media (max-width: 900px) {
   body{
     margin: 1rem;
@@ -53,20 +62,30 @@ body,html{
   .hide_smallscreen{
     display: block;
   }
-}
-@media (max-width: 500px) {
-  h1{
-    font-size: 100%!important;
+  .img_hldr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+}
+/*Desktop*/
+@media (min-width: 900px) {
+.img_hldr, #desc {
+  height: auto!important;
+}
 }
 
 /*Elements*/
 a{
   text-decoration: none; 
+  color: #000000;
 }
 a:hover{
   text-decoration: underline;
   transition: 0.2s all linear;
+}
+h1 a{
+  text-decoration: underline;
 }
 .no_underline:hover{
   text-decoration: none;
@@ -91,9 +110,12 @@ highlight:hover{
   background: purple!important;
 }
 h1{
-  font-size: 162%;
+  /*font-size: 162%;
   line-height: 140%;
+  font-weight: 400;*/
   font-weight: 400;
+  font-size: inherit;
+  line-height: inherit; 
   padding: 0;
   margin: 0;
 }
@@ -108,7 +130,7 @@ thumbnail{
 }
 label{
   display: inline-block;
-  font-size: 62%;
+  font-size: 65%;
   font-weight: 400;
   font-family: sans-serif!important;
   text-align: center;

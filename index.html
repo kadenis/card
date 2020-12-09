@@ -49,10 +49,7 @@
 
   <!-- Scripts -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Yantramanav:100,300,400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
 </head>
@@ -69,7 +66,11 @@
     <br>
 
     <!-- Bio-->
-    <h1>Krystelle (Krys) Denis is a software technologist specializing in visual frameworks and data-driven narratives. She co-runs <a href="https://behaviorovertime.org" target="_blank">Behavior/time</a><sup>1</sup> and is currently working on <a href="https://digitalbenin.org/" target="_blank">Digital Benin</a>.</h1>
+    <h1>Krystelle (Krys) Denis is a software technologist specializing in visual frameworks and data-driven narratives. She co-runs <a href="https://behaviorovertime.org" target="_blank">Behavior/time</a><sup>1</sup> and is currently working on <a href="https://digitalbenin.org/" target="_blank">Digital Benin</a>.</h1><br>
+    <div class="img_hldr">
+      <img onclick="autoChange_click()" id='img' class='displayed-img' src="https://payload.cargocollective.com/1/20/647904/10586396/01_22_1600_c.jpg">
+    </div>
+    <div id="desc"></div>
     <br>
        
       
@@ -82,37 +83,37 @@
     <h2>Select Projects:</h2>
 
     <a href="https://behaviorovertime.org/Digital-Benin" target="_blank" class="no_underline">
-    <label><i class="far fa-folder-open"></i></label>
+    <label><i class="far fa-folder"></i></label>
     <span>Digital Benin</span></a>
     <br>
 
     <a href="https://vimeo.com/316104233" target="_blank" class="no_underline">
-    <label><i class="far fa-folder-open"></i></label>
+    <label><i class="far fa-folder"></i></label>
     <span>Project Apollinaire</span></a>
     <br>    
 
     <a href="http://cargocollective.com/kadenis/Excess-Laboratory" target="_blank" class="no_underline">
-    <label><i class="far fa-folder-open"></i></label>
-    <span>Thesis / Excess Laboratory</span></a>
+    <label><i class="far fa-folder"></i></label>
+    <span>Thesis - Excess Laboratory</span></a>
     <br>
 
     <a href="https://vimeo.com/142688645" target="_blank" class="no_underline">
-    <label><i class="far fa-folder-open"></i></label>
+    <label><i class="far fa-folder"></i></label>
     <span>Life and Death of Data</span></a>
     <br>
 
     <a href="https://behaviorovertime.org/Posthuman-Cover-Design" target="_blank" class="no_underline">
-    <label><i class="far fa-folder-open"></i></label>
+    <label><i class="far fa-folder"></i></label>
     <span>NG09 Posthuman: Cover Design</span></a>
     <br>
 
     <a href="https://vimeo.com/166060758#t=24s" target="_blank" class="no_underline">
-    <label><i class="far fa-folder-open"></i></label>
+    <label><i class="far fa-folder"></i></label>
     <span>Colorful Arguments</span></a>
     <br>
 
     <a href="https://vimeo.com/142685054" target="_blank" class="no_underline">
-    <label><i class="far fa-folder-open"></i></label>
+    <label><i class="far fa-folder"></i></label>
     <span>Mapping Plant Nurseries</span></a>
     <br>
 
@@ -142,8 +143,7 @@
     <br>
     06 95 90 76 54 (FR)
     <br>    
-    Paris, France
-    <br>
+
 
     <!-- Footnote -->
     <br>
@@ -164,5 +164,66 @@
 	  
   </div></div><!-- end right page-->
   
-	
+  <script>
+    var imgArray = [
+        ['https://payload.cargocollective.com/1/20/647904/10586396/05_7_1600_c.jpg',
+        ''],
+
+        ['https://payload.cargocollective.com/1/20/647904/10586396/03_5_1600_c.jpg',
+        ''],
+
+        ['https://payload.cargocollective.com/1/20/647904/10586396/17.gif',
+        ''],
+
+        ['https://payload.cargocollective.com/1/20/647904/10586396/IMG_3344c_1600_c.jpg',
+        ''],
+
+        ['https://payload.cargocollective.com/1/20/647904/10600916/IMG_2993_1600_c.JPG',
+        ''],
+
+        ['https://payload.cargocollective.com/1/20/647904/10586425/shippy.gif',
+        ''],
+
+        ['https://payload.cargocollective.com/1/20/647904/10586425/part1.gif',
+        ''],
+
+        ['https://payload.cargocollective.com/1/20/647904/10586425/landingd.gif',
+        ''],
+
+        ['https://payload.cargocollective.com/1/20/647904/10586425/01b_1000.jpg','']
+    ];
+
+    var index = 0; 
+    var img = document.getElementById('img'); 
+    var desc = document.getElementById('desc');
+
+    function autoChange() {
+      if(index < imgArray.length){
+        img.src = imgArray[index][0];  
+        //desc.innerHTML = imgArray[index][1]; 
+        index++;                      
+        console.log(index);
+      } else {
+        index = 0;  
+      }
+      setTimeout(autoChange, 3000);  
+    }
+    function autoChange_click() {
+      if(index < imgArray.length){
+        img.src = imgArray[index][0];  
+        //desc.innerHTML = imgArray[index][1]; 
+        index++;                      
+        console.log(index);
+      } else {
+        index = 0;  
+      }
+      clearTimeout(autoChange);
+    }
+
+    autoChange();
+
+    $(window).on( 'resize', function () {
+        $('.img_hldr').height( $('.page_left').width() / 1.5 );
+    }).resize();
+  </script>
 </body>
