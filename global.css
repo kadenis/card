@@ -27,10 +27,10 @@ body,html{
   padding: 2rem;
 }
 .page_left{
-    max-width: 555px;
+    max-width: 600px;
 }
 .page_right{
-    max-width: 900px;
+    max-width: 600px;
 }
 .hide_smallscreen{
   display: none;
